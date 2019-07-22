@@ -1,21 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from '@material-ui/core/Button';
 
-function App() {
+
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hey Kevin! We have a starter application hosted on a server!
+          Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
-          href="#"
+          href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        ></a>
+        >
+          Learn React
+        </a>
+        <Button variant="contained" color="primary">
+          Hello World
+        </Button>
       </header>
     </div>
   );
